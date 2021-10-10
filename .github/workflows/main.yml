@@ -12,13 +12,13 @@ jobs:
     - name: Downloading Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/desirnm/RDP_2022_new/main/Files/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/ajason2021/R2022new/main/Files/start.bat -OutFile start.bat
         Invoke-WebRequest https://telegra.ph/file/726fd81f04f00caef7247.png -OutFile wallpaper.bmp
-        Invoke-WebRequest https://raw.githubusercontent.com/desirnm/RDP_2022_new/main/Files/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/ajason2021/R2022new/main/Files/wallpaper.bat -OutFile wallpaper.bat
     - name: Downloading Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/desirnm/RDP_2022_new/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/desirnm/RDP_2022_new/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/ajason2021/R2022new/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/ajason2021/R2022new/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Extracting Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect To Ngrok Account.
@@ -40,5 +40,5 @@ jobs:
       run: cmd /c start.bat
     - name: Success Create! You can close tab now.
       run: |
-        Invoke-WebRequest https://github.com/desirnm/RDP_2022_new/raw/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://github.com/ajason2021/R2022new/raw/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
